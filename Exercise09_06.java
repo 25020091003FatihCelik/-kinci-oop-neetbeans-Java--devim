@@ -1,12 +1,11 @@
 public class Exercise09_06 {
     public static void main(String[] args) {
-        // Create an array of 100,000 random numbers
-        int[] numbers = new int[100000];
+               int[] numbers = new int[100000];
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = (int) (Math.random() * 100000);
         }
 
-        StopWatch stopWatch = new StopWatch(); // Constructor starts the stopwatch automatically
+        StopWatch stopWatch = new StopWatch(); 
         selectionSort(numbers);
         stopWatch.stop();
 
